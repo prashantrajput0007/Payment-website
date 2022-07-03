@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment form.css">
+    <title>Payment Form</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Payment Form</h1>
+    <hr/>
+    <h2>User Information</h2><br/><br/>
+    <form>
+       Name <input type="text" name="Name"/> <br/><br/>
+       <fieldset>
+        <legend>GENDER</legend>
+        <input type="radio" name="GENDER" value="Male"/>MALE
+        <input type="radio" name="GENDER" value="Female"/>FEMALE
+        </fieldset>
+        <br/><br/>
+       ADDRESS <textarea name="address" row="5" cols="50" placeholder="Write your address here"></textarea><br/><br/>
+       E-MAIL<input type="text" name="email"/><br/><br/>
+       PINCODE<input type="text"  name="number"/><br/><br/>
+       <hr/>
+       <h2>Payment Information</h2>
+       <br/>
+       <label for="card-selection">Select your card:</label>
+       <select ID="CARD SELECTION">
+        <option value="">--Select Your Card--</option>
+        <option value="CREDIT">CREDIT</option>
+        <option value="DEBIT">DEBIT</option>
+        <option value="CHARGE CARD">CHARGE CARD</option>
+        <option value="Pre-Paid Card">Pre-Paid CARD</option>
+       </select>
+       <br/><br/>
+       CARD NUMBER
+       <input maxlength='19' placeholder="0000-0000-0000-0000" type="text" onkeyup="formatString(event);"><br/><br/>
+       EXPIRE
+       <input maxlength='5' placeholder="MM/YY" type="text" onkeyup="formatString(event);"><br/><br/>
+       CVV
+       <input maxlength='3' placeholder="123" type="text" onkeyup="formatString(event);"> <br/><br/>
+       <input type="button" name="Pay Now" value="Pay Now"/>
+
+       
+    </form>
+</div>
+
+</body>
+</html>
